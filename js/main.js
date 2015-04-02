@@ -35,10 +35,13 @@ var app = {
 	initialize: function() {
 		var self = this;
 		this.store = new MemoryStore(function() {
-			self.showAlert('Tutorial carregado!!', 'Deu certo!');
+			//self.showAlert('Tutorial carregado!!', 'Deu certo!');
 			$('body').html(new HomeView(self.store).render().el);
 			self.registerEvents();
+		//registerEvents();
+
 		});
+	
 	}
 
 };
